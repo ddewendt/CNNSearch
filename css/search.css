@@ -1,0 +1,180 @@
+.zn.zn--search{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 146px;
+    z-index: 10;
+    background-color: #ffffff;
+    border-bottom: solid #d9d9d9 1px;
+
+}
+.search-facets.display-facets.display-results{
+	display: none!important;
+}
+
+.l-footer{
+	z-index: 100; position: relative;
+}
+
+.search-cat-list{position: relative;}
+.search-cat-list:before{
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 600px;
+    display: block;
+    top: 207px;
+    left: 50%;
+    margin-left: -550px;
+	background-image: url(http://eat.tv/CNNNav/search/parts/southwest.jpg);
+}
+
+.zn-30-70--search-results{
+	padding-top: 80px;
+}
+
+
+.zn-wrapper .search-input{padding-right: 0; font-size: 0; margin-top: 1rem;}
+
+
+.pg.t-light .pg-wrapper form button.n_search_cta{
+	font-family: cnn-icons;
+	background-color: #CC0000;
+	color:#fafafa;
+	min-width:51px; height: 44px;
+	display: inline-block;
+	margin: 0; vertical-align: top;
+}
+
+.pg-wrapper form input.n_search_text{
+	height: 44px;
+	display: inline-block;
+	width: calc(100% - 51px); vertical-align: top;
+}
+
+.n_search_ops{
+	font-size: 16px; position: relative; margin-top: 18px;
+	
+}
+
+.n_search_ops div,.n_search_ops div>span{
+	display: inline-block; vertical-align: top;
+}
+.n_search_ops>div>span{
+	line-height: 40px; font-size: 14px;
+}
+.n_search_ops ul{
+	display: inline-block;
+	border:1px solid #DDD;
+	overflow: hidden;
+	background-color: white;
+	
+	height: 40px;
+	padding: 0; margin: 0;
+	vertical-align: middle;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: height 750ms ease-in-out;
+	transition: height 750ms ease-in-out;
+	will-change:height;
+	
+}
+.n_search_ops ul:after{
+	content: "\F10A"; font-family: cnn-icons;
+	position: absolute; top:6px; right: 12px; display: block; font-size: 18px; color: #bfbfbf;
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	will-change: transform, color,-webkit-transform;
+	-webkit-transition: all 750ms ease-in-out;
+	transition: all 750ms ease-in-out;
+}
+
+.n_search_ops ul.n_search-drop.drop_expanded:after{
+	color:#CC0000;
+	transform: rotateZ(0deg);
+}
+.n_search_ops ul.n_search-drop.drop_expanded{
+/* 	margin-top: 1px; */
+}
+
+
+
+.n_search_ops ul>li{
+	list-style: none;
+	padding: 0 12px;
+	line-height: 40px;
+	padding-right: 30px;
+}
+
+.n_search-rightOps{position: absolute; top:0; right: 0;}
+
+.n_search-selector>span{
+	margin: 0 22px; cursor: pointer;
+	-webkit-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
+	border-bottom: 1px solid transparent;
+	font-size: 14px; line-height: 32px; padding-top: 8px;
+}
+
+.n_search-selector>span.n_search-selected{
+	border-bottom: 1px solid #fb1b17;
+}
+
+.n_search-scroll{
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.n_search-scroll h1{
+	font-size: 18px; color: #262626;
+}
+.n_search-scroll h2{
+	font-size: 12px; color: #737373;
+}
+
+.scroll_part{
+	white-space: nowrap;font-size: 0; position: relative; left: 0;
+	-webkit-transition: left 750ms ease-in-out;
+	transition: left 750ms ease-in-out;
+	will-change:left;	
+	
+}
+.scroll_part>div{
+	display: inline-block; vertical-align: top;
+	width: 242px;
+	height: 200px;
+}
+
+.scroll_part>div>div{
+	height: 150px; width:100%;
+}
+
+.scrl_element{
+	position: absolute; top:0; width:32px; height: 150px; background-color: rgba(0,0,0,0.75);
+	color:white; font-family: cnn-icons; text-align: center; font-size: 28px; font-weight: 100;
+	
+	opacity: 0.1;
+	-webkit-transition: opacity 180ms ease-in-out;
+	transition: opacity 180ms ease-in-out;
+	will-change:opacity;
+}
+.n_search-scroll:hover .scrl_element{
+	opacity: 1;
+}
+.scrl_prev{
+	left:0;
+}
+.scrl_post{
+	right:0;
+}
+.scrl_element:before{
+	line-height: 150px;
+}
+.scrl_prev:before{
+	content:"\F102";
+}
+.scrl_post:before{
+	content:"\F107"; 
+}
